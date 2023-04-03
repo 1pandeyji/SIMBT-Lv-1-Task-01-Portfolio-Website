@@ -1,0 +1,27 @@
+.ankit{
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.ankit h1{
+    margin: 0;
+    font-size: 150px;
+    color: rgba(206, 9, 9, 0.01);
+    background-image: url("https://picsum.photos/seed/picsum/200/300");
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    animation: animate 15s ease-in-out infinite;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+@keyframes animate {
+    0%,
+    100%{background-position: left top;}
+    25%{ background-position: right bottom;}
+    50%{ background-position: left bottom;}
+    75%{ background-position: right top;}
+}
